@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="image">
+        <img src="./plant.jpg" alt="Leaves">
+        <div class="logo">
+            <img src="./logo.png" alt="Odin Logo">
+            <p>ODIN</p>
+        </div>
+        <p class="credit">Photo by Halie West on Unsplash</p>
+    </div>
+    <div class="content">
+        <div class="top">
+            <div class="text">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="content">
+                <p>Let's do this!</p>
+                <form id="user-registration" action="https://httpbin.org/post" method="post">
+                    <div class="buttons">
+                        <div class="entry">
+                            <label for="first-name">FIRST NAME</label>
+                            <input required id="first-name" name="first-name" type="text">
+                        </div>
+                        <div class="entry">
+                            <label for="last-name">LAST NAME</label>
+                            <input required id="last-name" name="last-name" type="text">
+                        </div>
+                        <div class="entry">
+                            <label for="email">EMAIL</label>
+                            <input required id="email" name="email" type="email">
+                        </div>
+                        <div class="entry">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input required id="phone-number" name="phone-number" type="tel">
+                        </div>
+                        <div class="entry">
+                            <label for="password">PASSWORD</label>
+                            <input required minlength="5" id="password" name="password" type="password">
+                        </div>
+                        <div class="entry">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input required minlength="5" id="confirm-password" name="confirm-password" type="password">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <button type="submit" form="user-registration">Create Account</button>
+            <p>Already have an account? <a href="https://google.com">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
